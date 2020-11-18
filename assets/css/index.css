@@ -1,0 +1,293 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    /*navbar*/
+    
+    .navbar {
+        position: fixed !important;
+        width: 100%;
+        margin-top: -1%;
+        margin-bottom: 5%;
+        background-color: rgb(55, 54, 53);
+        z-index: 10;
+        padding: 2vmin 0;
+    }
+    
+    .navbar ul {
+        padding: 0.4em 0em;
+        right: 0%;
+        list-style-type: none;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar ul .left {
+        right: 0%;
+        list-style-type: none;
+        margin: 5px;
+        display: flex;
+    }
+    
+    .navbar ul .left img {
+        padding: 0em;
+        width: 4vmin;
+        margin: 5px;
+    }
+    
+    .navbar .nav-item img {
+        width: 1em;
+    }
+    
+    .navbar .nav-item .searsh {
+        margin-top: 1.4vmin;
+        position: relative;
+        border: whitesmoke 2px solid;
+        height: 2rem;
+        border: rgb(7, 7, 7) !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar .nav-item .searsh a {
+        background-color: rgb(177, 177, 177);
+        border: none !important;
+        height: 100%;
+        padding: 0.5rem 2rem;
+    }
+    
+    .navbar .nav-item .searsh input {
+        background-color: whitesmoke;
+        border: none !important;
+        height: 100%;
+        width: 40vmin;
+    }
+    
+    .navbar .nav-item .cercel {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 20%;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(36, 64, 135);
+    }
+    
+    .navbar .nav-item .menuicon {
+        width: 5vmin;
+    }
+    
+    .navbar .nav-item .youtubbrand {
+        margin-left: 2vmin;
+        width: 15vmin;
+    }
+    /*playlists*/
+    
+    @media only screen and (max-width:991px) {
+        .playlist {
+            padding-left: -5% !important;
+            width: 100%;
+            float: none;
+            clear: both;
+        }
+        .playlist .container {
+            justify-content: center;
+            width: 100%;
+        }
+        .playlist .container .description {
+            max-width: 100%;
+            min-width: 250px;
+        }
+        .main {
+            overflow-x: hidden;
+        }
+        .main .full-vedio {
+            overflow: hidden;
+            float: none;
+            position: fixed;
+            width: 95% !important;
+        }
+    }
+    
+    @media only screen and (max-width:750px) {
+        .playlist .container {
+            width: 100%;
+        }
+        .playlist .container .description {
+            min-width: 250px;
+        }
+    }
+    
+    .main {
+        padding-top: 15vmin;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .main .full-vedio {
+        margin-left: 2%;
+        position: relative;
+        width: 50%;
+        float: left;
+    }
+    
+    .full-vedio .description {
+        margin-top: 2vmin;
+    }
+    
+    .full-vedio .description hr {
+        width: 90%;
+        margin-top: 3px;
+        color: rgba(255, 255, 255, 0.24);
+    }
+    
+    .full-vedio .description .content {
+        display: inline-flex !important;
+        justify-content: space-between;
+        margin-top: 2vmin;
+    }
+    
+    .full-vedio .description .content div {
+        margin: 0px 2vmin;
+    }
+    
+    .full-vedio .description .chanelinfo {
+        width: 80%;
+        margin-top: 5vmin;
+    }
+    
+    .full-vedio .description .chanelinfo .p1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .full-vedio .description .chanelinfo .p1 .chimg {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .full-vedio .description .chanelinfo .p1 .chimg img {
+        margin-right: 1vmin;
+        border-radius: 50%;
+    }
+    
+    .full-vedio .description .chanelinfo .p1 button {
+        border-radius: 5px;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        background-color: rgb(167, 8, 8);
+        padding: 0px 15px;
+        height: 2rem;
+    }
+    
+    .full-vedio .description .chanelinfo .p2 {
+        margin-top: 5vmin;
+        margin-left: 7vmin;
+    }
+    
+    .full-vedio .description .chanelinfo h4 {
+        margin-top: 1vmin;
+        margin-bottom: 3vmin;
+        margin-left: 7vmin;
+    }
+    
+    .full-vedio .comment {
+        margin: 5vmin;
+    }
+    
+    .full-vedio .comment img {
+        border-radius: 50%;
+    }
+    
+    .full-vedio .comment .usergist {
+        margin: 3vmin 0;
+    }
+    
+    .full-vedio .comment .usergist input {
+        padding: 0 2vmin;
+        background: unset;
+        border: unset;
+        border-bottom: solid 2px rgb(121, 119, 119);
+        color: rgb(187, 184, 184);
+        width: 40vmin;
+    }
+    
+    .full-vedio .comment .usergist h4 {
+        margin-bottom: 5vmin;
+    }
+    
+    .full-vedio .comment .usergist h4 span {
+        opacity: 0.6;
+    }
+    
+    .full-vedio .comment .usercomment {
+        display: flex;
+        justify-content: left;
+        margin-top: 5vmin;
+    }
+    
+    .full-vedio .comment .usercomment .content {
+        margin-left: 2vmin;
+    }
+    
+    .full-vedio .comment .usercomment .content {
+        margin-left: 2vmin;
+    }
+    
+    .full-vedio .comment .usercomment .content span {
+        margin-top: 2vmin;
+        margin-right: 2vmin;
+        color: rgba(255, 255, 255, 0.445);
+    }
+    
+    .full-vedio .comment .usercomment .content span img:nth-child(2) {
+        margin-top: 2vmin;
+    }
+    
+    .playlist {
+        margin-top: 5vmin;
+        margin-left: 4%;
+        position: relative;
+        width: 40%;
+        float: left;
+        text-transform: lowercase;
+    }
+    
+    .playlist h3 {
+        margin: 2vmin;
+        margin-bottom: 5vmin;
+    }
+    
+    .playlist .container {
+        display: flex;
+        justify-content: left;
+    }
+    
+    .playlist .container .description {
+        min-width: 256px;
+        max-width: 80%;
+        margin-left: 2%;
+    }
+    
+    .playlist .container p:nth-child(2) {
+        text-transform: uppercase;
+        margin: 1vmin 0vmin;
+        color: rgba(255, 255, 255, 0.685);
+    }
+    
+    .playlist .container p:nth-child(3) {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.685);
+        margin: 1vmin 0vmin;
+    }
+    
+    body {
+        background-color: rgba(0, 0, 0, 0.933);
+        color: white;
+    }
